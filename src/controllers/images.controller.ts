@@ -5,6 +5,7 @@ import { API_MESSAGES } from "../shared/messages";
 export const imagesController = {
   uploadImage(req: Request, res: Response) {
     res.status(201).json({ message: API_MESSAGES.UPLOAD_IMAGE_SUCCESS });
+    Logger.debug(req.file);
     Logger.info(API_MESSAGES.UPLOAD_IMAGE_SUCCESS);
   },
 };
