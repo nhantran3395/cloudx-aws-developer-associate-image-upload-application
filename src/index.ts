@@ -1,4 +1,5 @@
 import express from "express";
+import "./configs";
 import { Logger } from "./logger";
 import { morganMiddleware } from "./middlewares";
 import { API_MESSAGES } from "./shared/messages";
