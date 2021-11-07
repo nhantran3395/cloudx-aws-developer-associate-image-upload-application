@@ -1,7 +1,5 @@
-import AWS from "aws-sdk";
 import { Logger } from "../logger";
-
-AWS.config.update({ region: process.env.AWS_REGION ?? "" });
+import AWS from "../configs/aws.config";
 
 const sqs = new AWS.SQS({ apiVersion: "2012-11-05" });
 const queue_url = process.env.AWS_QUEUE_URL ?? "";
