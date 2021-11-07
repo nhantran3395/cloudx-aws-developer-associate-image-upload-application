@@ -3,7 +3,7 @@ import "./configs";
 import { Logger } from "./logger";
 import { morganMiddleware } from "./middlewares";
 import { API_MESSAGES } from "./shared/messages";
-import { imagesRouter } from "./routes";
+import { imagesRouter, notificationsRouter } from "./routes";
 
 const app = express();
 const port = process.env.APPLICATION_PORT ?? 3000;
@@ -16,6 +16,7 @@ app.get("/", function (req, res) {
 });
 
 app.use("/images", imagesRouter);
+app.use("/notifications", notificationsRouter);
 
 app.listen(port, () => {
   Logger.info(`server started at http://localhost:${port}`);
