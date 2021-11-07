@@ -4,4 +4,5 @@ export const API_MESSAGES = {
   UPLOAD_IMAGE_SUCCESS: "Image uploaded successfully",
   ADD_SUBSCRIPTION_SUCCESS: "Subscription added successfully",
   REMOVE_SUBSCRIPTION_SUCCESS: "Subscription removed",
+  SUBSCRIPTION_EMAIL_REQUIRED: "Email must be provided",
 };
