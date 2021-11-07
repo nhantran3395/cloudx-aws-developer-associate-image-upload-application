@@ -1,5 +1,5 @@
-import { Logger } from "../logger";
 import AWS from "../configs/aws.config";
+import { Logger } from "../logger";
 
 const sqs = new AWS.SQS({ apiVersion: "2012-11-05" });
 const queue_url = process.env.AWS_QUEUE_URL ?? "";
